@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RateUsFragment">
+
+    <EditText
+        android:id="@+id/suggestionsBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/edit_text_border"
+        android:gravity="top"
+        android:hint="Your suggestions"
+        android:lines="10"
+        android:paddingStart="10dp"
+        android:paddingTop="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/star1"
+        android:layout_width="27dp"
+        android:layout_height="28dp"
+        app:layout_constraintTop_toBottomOf="@+id/tt"
+        app:layout_constraintLeft_toRightOf="@+id/tt"
+        android:layout_marginTop="10dp"
+        />
+
+    <Button
+        android:id="@+id/star2"
+        android:layout_width="27dp"
+        android:layout_height="28dp"
+        app:layout_constraintTop_toBottomOf="@+id/tt"
+        app:layout_constraintLeft_toRightOf="@+id/star1"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="4dp"
+        />
+
+    <Button
+        android:id="@+id/star3"
+        android:layout_width="27dp"
+        android:layout_height="28dp"
+        app:layout_constraintTop_toBottomOf="@+id/tt"
+        app:layout_constraintLeft_toRightOf="@+id/star2"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="4dp"
+        />
+
+    <Button
+        android:id="@+id/star4"
+        android:layout_width="27dp"
+        app:layout_constraintTop_toBottomOf="@+id/tt"
+        app:layout_constraintLeft_toRightOf="@+id/star3"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="4dp"
+        android:layout_height="28dp" />
+
+    <Button
+        android:id="@+id/star5"
+        android:layout_width="27dp"
+        android:layout_height="28dp"
+        app:layout_constraintTop_toBottomOf="@+id/tt"
+        app:layout_constraintLeft_toRightOf="@+id/star4"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/tt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:text="Rate Our App"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/suggestionsBox" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/star1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="16dp"
+        android:text="Average Rating :" />
+
+    <TextView
+        android:id="@+id/averageRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintLeft_toRightOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/star1" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_baseline_star_coloured"
+        app:layout_constraintLeft_toRightOf="@+id/averageRating"
+        app:layout_constraintTop_toBottomOf="@+id/star1" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="73dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/design_default_color_error"
+        android:text="Submit"
+        android:textColor="#FFFFFF"
+        android:textSize="15dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/suggestionsBox" />
+
+    <TextView
+        android:id="@+id/RatingCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/star1" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

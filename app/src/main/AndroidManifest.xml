@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.manitplus">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_app_icon"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".DevelopersInfoFragment"></activity>
+        <activity android:name=".AttendanceCalenderFragment" />
+        <activity android:name=".MessFragment" />
+        <activity android:name=".NotesUploadFragment" />
+        <activity android:name=".EventUploadFragment" />
+        <activity android:name=".EventDescriptionFragment" />
+        <activity android:name=".EventFragment" />
+        <activity android:name=".NotesFragment" />
+        <activity android:name=".RateUsFragment" />
+        <activity android:name=".ProfilePicDisplayFragment" />
+        <activity android:name=".MyAccountFragment" />
+        <activity android:name=".BannedActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/LogInTheme" />
+        <activity
+            android:name=".SignUpActivity"
+            android:theme="@style/SignUpTheme" />
+        <activity android:name=".AssignmentUploadFragment" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.manitplus.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/filepaths" />
+        </provider>
+
+        <activity
+            android:name=".SplashScreen"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

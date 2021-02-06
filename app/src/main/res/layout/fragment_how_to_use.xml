@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="30dp"
+            android:fontFamily="@font/roboto_medium"
+            android:text='Every section of the branch will have one admin (excluding developers) who will keep posting and updating the events, notices and other announcements relevant to that section.\n\nATTENDANCE: -\n   When clicked on the attendance section, the first thing user will see are the subjects of that day and their details (current attendance of that subject, if less than 75%, how many future lectures user can’t miss). Also you can mark the attendance of that subject by clicking on the button on the bottom of the card as present absent or undo.\n   	In order to edit past attendances, user need to click on that subject which will take the user to a calendar view where they can go to a specific date and choose add an absent on that day, add a present on that day or undoing a present or an absent (using the red cross button).\n\n\nASSINGMENTS: -\n   In the assignment section, anyone can upload an assignment along its subject and its date of submission. \n   All file formats can be uploaded(ppt, pdf, word, txt, etc).\n   Once uploaded, only the uploader (and developer) can delete a file.\n\n\nNOTES: -\n   In the notes section, anyone can upload notes of any subject. The notes uploaded can only be accessed by the users of same section as that of the uploader.\n   All file formats can be uploaded(ppt, pdf, word, txt, etc).   Users can see on the card the subject, file name, uploaders name, size of the pdf and the number of pages of the pdf.\n   Just like in the assignment section, once uploaded, only the uploader (and developer) can delete a file.\n\n\n ANNOUNCEMENTS: -\n  Any unofficial announcements relevant to your section will be posted here by the admins.\n\n\nEVENTS: -\n   Users can see all the upcoming events in this section.\n   On clicking on an event, users can see the description of the event and also register in the event by the link provided (if available) by the admins.\n\n\nNOTICES: -\n   All the official notices and relevant announcements can be seen in this section.'
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

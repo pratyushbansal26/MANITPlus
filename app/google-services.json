@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "662986363537",
+    "project_id": "manit-plus",
+    "storage_bucket": "manit-plus.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:662986363537:android:a0a56d2287f1baafa8e530",
+        "android_client_info": {
+          "package_name": "com.example.manitplus"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "662986363537-4k0ik7qoudkd0rd66eio11an6nv7uodq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.manitplus",
+            "certificate_hash": "efe0883d8c84d7164e0b6d0c11edc6f63312778f"
+          }
+        },
+        {
+          "client_id": "662986363537-bosi3mqagqghrhnhm2g6ps8q8sag8189.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB7Fap1LJNduZDmYidNjXlbyYCXVwoYwco"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "662986363537-bosi3mqagqghrhnhm2g6ps8q8sag8189.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AttendanceCalenderFragment">
+
+    <CalendarView
+        android:id="@+id/calendar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/date_selected"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/card_background15" />
+
+    <TextView
+        android:id="@+id/date_selected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="1111-11-11"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="@+id/calendar"
+        app:layout_constraintRight_toRightOf="@+id/calendar"
+        app:layout_constraintTop_toBottomOf="@+id/calendar" />
+
+    <TextView
+        android:id="@+id/present"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:text="Present Count : 0"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textSize="18dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/absent"
+        app:layout_constraintTop_toBottomOf="@+id/date_selected" />
+
+    <TextView
+        android:id="@+id/absent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:text="Absent Count : 0"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toRightOf="@+id/present"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/date_selected" />
+
+    <TextView
+        android:id="@+id/pp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Present"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textSize="22sp"
+        app:layout_constraintLeft_toLeftOf="@+id/present"
+        app:layout_constraintRight_toRightOf="@+id/present"
+        app:layout_constraintTop_toBottomOf="@+id/present" />
+
+    <TextView
+        android:id="@+id/aa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text=" Absent "
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textSize="22sp"
+        app:layout_constraintLeft_toLeftOf="@+id/absent"
+        app:layout_constraintRight_toRightOf="@+id/absent"
+        app:layout_constraintTop_toBottomOf="@+id/absent" />
+
+    <Button
+        android:id="@+id/present_plus"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/ic_baseline_attendance_plus"
+        app:layout_constraintTop_toBottomOf="@+id/pp"
+        app:layout_constraintLeft_toLeftOf="@+id/pp"
+        android:layout_marginTop="5dp"
+        />
+
+    <Button
+        android:id="@+id/present_subtract"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/ic_baseline_cancel_24"
+        app:layout_constraintRight_toRightOf="@+id/pp"
+        app:layout_constraintTop_toBottomOf="@+id/pp"
+        android:layout_marginTop="5dp"
+        />
+
+    <Button
+        android:id="@+id/absent_plus"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:layout_constraintTop_toBottomOf="@+id/aa"
+        app:layout_constraintLeft_toLeftOf="@+id/aa"
+        android:background="@drawable/ic_baseline_attendance_plus"
+        android:layout_marginTop="5dp"
+        />
+
+    <Button
+        android:id="@+id/absent_subtract"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:layout_constraintTop_toBottomOf="@+id/aa"
+        app:layout_constraintRight_toRightOf="@+id/aa"
+        android:background="@drawable/ic_baseline_cancel_24"
+        android:layout_marginTop="5dp"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
